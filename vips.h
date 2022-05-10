@@ -364,6 +364,7 @@ vips_webpsave_bridge(VipsImage *in, void **buf, size_t *len, int strip, int qual
 		"strip", INT_TO_GBOOLEAN(strip),
 		"Q", quality,
 		"lossless", INT_TO_GBOOLEAN(lossless),
+		"kmax", 1,
 		NULL
 	);
 }
